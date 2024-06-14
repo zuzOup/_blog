@@ -1,0 +1,121 @@
+.archive-link-bck {
+  margin: 0 auto;
+  height: 20vw;
+  width: 30vw;
+
+  background-image: url("/archivelink.png");
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.archive-link {
+  height: 5.8vw;
+  width: 15.45vw;
+
+  position: relative;
+
+  border-radius: 55% 45% 44% 44% / 62% 54% 46% 37%;
+
+  transform: translateX(-3.1vw) translateY(1.05vw);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  font-size: 2.1vw;
+
+  font-weight: 300;
+  color: black;
+  font-family: var(--fontHeader);
+  opacity: 0.78;
+  transition: 0.5s all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.archive-link:hover {
+  opacity: 0.9;
+}
+
+.archive-link span {
+  transform: translateY(0.1vw);
+  /*Higlighter effect from Matt Pi's answer https://stackoverflow.com/questions/33451683/pen-highlighter-effect-in-css */
+  font-weight: bolder;
+
+  background: linear-gradient(
+      104deg,
+      rgba(234, 90, 51, 0) 0.9%,
+      rgba(234, 90, 51, 1.25) 2.4%,
+      rgba(234, 90, 51, 0.5) 5.8%,
+      rgba(234, 90, 51, 0.1) 93%,
+      rgba(234, 90, 51, 0.7) 96%,
+      rgba(234, 90, 51, 0) 98%
+    ),
+    linear-gradient(
+      183deg,
+      rgba(234, 90, 51, 0) 0%,
+      rgba(234, 90, 51, 0.3) 7.9%,
+      rgba(234, 90, 51, 0) 15%
+    );
+
+  margin: 0;
+  border-radius: 7.5px;
+
+  background-size: 0% 90%;
+  background-position: left;
+  background-repeat: no-repeat;
+
+  transition: 0.5s all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+span.archive-link-active {
+  background-size: 100% 90%;
+  text-shadow: -4px 2px 8px rgba(234, 90, 51, 0.7), 4px 2px 8px rgb(241, 176, 176);
+}
+
+@media screen and (min-width: 2000px) {
+  .archive-link-bck {
+    height: 400px;
+    width: 600px;
+  }
+  .archive-link {
+    height: 116px;
+    width: 309px;
+    font-size: 42px;
+    transform: translateX(-62px) translateY(21px);
+  }
+  .archive-link span {
+    transform: translateY(2px);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .archive-link-bck {
+    height: 33.33vw;
+    width: 50vw;
+    margin: 6vw auto 8vw auto;
+  }
+
+  .archive-link {
+    height: 9.33vw;
+    width: 25.33vw;
+    font-size: 4.8vw;
+    transform: translateX(-5vw) translateY(1.73vw);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .archive-link-bck {
+    height: 50vw;
+    width: 75vw;
+    margin: 8vw auto 12vw auto;
+  }
+
+  .archive-link {
+    height: 14.3vw;
+    width: 38vw;
+    font-size: 6.8vw;
+    transform: translateX(-7.5vw) translateY(2.6vw);
+  }
+}

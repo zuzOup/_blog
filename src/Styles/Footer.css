@@ -1,0 +1,304 @@
+footer .lace {
+  transform: rotate(180deg);
+}
+
+footer {
+  width: 100%;
+  max-width: 2000px;
+
+  margin: 3vw auto 0 auto;
+  overflow: hidden;
+}
+
+.footer {
+  background-image: url("/footer.png");
+  width: 100%;
+  height: 3.125vw;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer span,
+.footer ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.footer img {
+  height: 1.7vw;
+  width: 1.7vw;
+  margin: 0 0.5vw;
+
+  opacity: 0.85;
+  border: none;
+  box-shadow: none;
+}
+
+.footer button {
+  all: unset;
+}
+
+.footer p,
+.footer a,
+.footer button {
+  font-weight: 200;
+  font-family: var(--fontText);
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.footer span > p:nth-child(2) {
+  padding-right: 1vw;
+  border-right: 1px solid gray;
+}
+
+.footer span > p:nth-child(3) {
+  padding-left: 1vw;
+}
+
+.footer a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #000;
+}
+
+.footer button {
+  text-decoration: none;
+  color: #000;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.footer button:hover {
+  cursor: pointer;
+  font-size: 28px !important;
+}
+
+.footer a:hover {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.footer li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer li:nth-child(1) {
+  width: 10.5vw;
+}
+
+.footer li:nth-child(2) {
+  width: 6vw;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+.footer li:nth-child(3) {
+  width: 7.5vw;
+  border-right: 1px solid gray;
+}
+
+.footer li:nth-child(4) {
+  width: 4.6vw;
+}
+
+@media screen and (min-width: 2000px) {
+  footer {
+    margin: 60px auto 0 auto;
+  }
+
+  .footer {
+    height: 62.5px;
+  }
+
+  .footer img {
+    height: 34px;
+    width: 34px;
+    margin: 0 10px;
+  }
+
+  .footer span > p:nth-child(2) {
+    padding-right: 20px;
+  }
+
+  .footer span > p:nth-child(3) {
+    padding-left: 20px;
+  }
+
+  .footer li:nth-child(1) {
+    width: 150px;
+  }
+
+  .footer li:nth-child(2) {
+    width: 100px;
+  }
+
+  .footer li:nth-child(3) {
+    width: 130px;
+  }
+
+  .footer li:nth-child(4) {
+    width: 72.56px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer p,
+  .footer a,
+  .footer button {
+    font-size: 10px;
+  }
+}
+
+.footer button:hover {
+  font-size: 15px;
+}
+
+.footer button:hover {
+  font-size: 17px;
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    height: 10.5vw;
+    background-position: right;
+    flex-direction: column;
+    background-image: url("/footer800.png");
+  }
+
+  .footer ul {
+    height: 8.125vw;
+  }
+
+  .footer span {
+    height: 7vw;
+  }
+
+  .footer span:first-child {
+    transform: translateX(1.5vw);
+  }
+
+  .footer > ul:nth-child(2) {
+    padding-left: 0;
+  }
+
+  .footer span > p:nth-child(2) {
+    padding-right: 2vw;
+  }
+
+  .footer span > p:nth-child(3) {
+    padding-left: 2vw;
+    width: 25vw;
+    text-align: left;
+  }
+
+  .footer img {
+    height: 3.7vw;
+    width: 3.7vw;
+    margin: 0 1.5vw;
+  }
+
+  .footer button {
+    font-size: 2.5vw;
+  }
+  .footer button:hover {
+    font-size: 2.7vw;
+  }
+
+  .footer a {
+    line-height: 2vw;
+    text-align: center;
+    font-size: 2vw;
+  }
+
+  .footer p,
+  .Zuzka {
+    font-size: 1.8vw;
+  }
+
+  .footer li:nth-child(1) {
+    width: 19vw;
+  }
+
+  .footer li:nth-child(2) {
+    width: 13.67vw;
+  }
+
+  .footer li:nth-child(3) {
+    width: 17.1vw;
+  }
+
+  .footer li:nth-child(4) {
+    width: 9.18vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    height: 13.5vw;
+  }
+
+  .footer a {
+    font-size: 3vw;
+    line-height: 3.2vw;
+  }
+
+  .footer p,
+  .Zuzka {
+    font-size: 2.8vw !important;
+  }
+
+  .foorer button {
+    font-size: 3.4vw !important;
+  }
+
+  .foorer button:hover {
+    font-size: 3.6vw !important;
+  }
+
+  .footer span:first-child {
+    transform: translateX(2vw);
+  }
+
+  .footer span > p:nth-child(2) {
+    padding-right: 2.5vw;
+  }
+
+  .footer span > p:nth-child(3) {
+    padding-left: 2.5vw;
+    width: 40vw;
+  }
+
+  .footer li:nth-child(1) {
+    width: 23vw;
+  }
+
+  .footer li:nth-child(2) {
+    width: 14.67vw;
+  }
+
+  .footer li:nth-child(3) {
+    width: 18.1vw;
+  }
+
+  .footer li:nth-child(4) {
+    width: 10.18vw;
+  }
+}
+
+@media (hover: none) {
+  .footer a {
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,147 @@
+.nextprev {
+  max-width: 1000px;
+  padding-top: 30px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  transition: all 0.1s;
+}
+
+.NPlink {
+  display: flex;
+  text-decoration: none !important;
+  font-family: var(--fontText);
+}
+
+.NPImg {
+  height: 100px;
+  width: 100px;
+  border-radius: 2px;
+  background-color: white;
+  border: rgb(200, 200, 200) 1px solid;
+  box-shadow: 1px 1px 5px 0px rgba(191, 191, 191, 0.75);
+}
+
+.NPactiveImgNext {
+  transform: rotate(5deg);
+}
+
+.NPactiveImgPrev {
+  transform: rotate(-5deg);
+}
+
+.NPImg img {
+  width: 88px;
+  margin: 6px;
+  height: 66px;
+  font-size: 12px;
+}
+
+.NPspacer {
+  height: 78px;
+  width: 20px;
+}
+
+.NPdate {
+  font-size: 15px;
+  font-weight: 200;
+  letter-spacing: 1.3px;
+  padding-top: 5px;
+}
+
+.NPdiv {
+  display: flex;
+  flex-direction: column;
+  cursor: context-menu;
+  justify-content: center;
+}
+
+.NPdivNext {
+  align-items: end;
+}
+
+.NPdiv > * {
+  width: fit-content;
+  color: black;
+}
+
+.NPdiv p,
+.NPdiv div {
+  cursor: pointer;
+  margin: 0;
+}
+
+.NPdiv > p:nth-child(2) {
+  font-size: 22px;
+}
+
+.NPspan {
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding-bottom: 5px;
+}
+
+.NPspan div {
+  visibility: hidden;
+  width: 0;
+}
+
+.NPspanActive {
+  color: #e6562f;
+}
+.NPspanActive > div {
+  visibility: visible;
+  width: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .nextprev {
+    max-width: 960px;
+    width: 960px;
+  }
+
+  .NPdiv > p:nth-child(2) {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nextprev {
+    max-width: 96vw;
+    width: 96vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nextprev {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .NPlink.left {
+    align-self: flex-start;
+  }
+  .NPlink.right {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .NPlink.left {
+    scale: 0.9;
+  }
+  .NPlink.right {
+    scale: 0.9;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .NPdiv > p:nth-child(2) {
+    font-size: 15px;
+  }
+}

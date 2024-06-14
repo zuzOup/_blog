@@ -1,0 +1,114 @@
+.frame {
+  display: block;
+  margin: 7.5%;
+  width: 85%;
+  height: 85%;
+  background-color: white;
+  border: rgb(230, 230, 230) 1px solid;
+  box-shadow: 1px 1px 5px 0px rgba(191, 191, 191, 0.75);
+  text-decoration: none;
+  color: black;
+  border-radius: 2px;
+  padding-bottom: 0;
+  transition: all 0.1s;
+}
+
+.frame:hover {
+  border: rgb(220, 220, 220) 1px solid;
+  box-shadow: 1px 1px 6px 1px rgba(151, 151, 151, 0.75);
+}
+
+.frame h3,
+.frame h2,
+.frame h4 {
+  margin: 0;
+  text-align: center;
+}
+
+.frame h2 {
+  font-size: 1.1vw;
+  font-family: var(--fontText);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding: 0.5vw 0 0 0;
+}
+
+.frame h3 {
+  font-size: 1.15vw;
+  font-family: var(--fontText);
+  font-weight: 200;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.frame h4 {
+  font-size: 0.85vw;
+  font-family: var(--fontHeader);
+  font-weight: 600;
+  color: rgb(234, 90, 51);
+  letter-spacing: 1px;
+  width: fit-content;
+
+  transform: translateX(20.31vw) translateY(-17.5vw) rotate(90deg);
+  transform-origin: 0%;
+}
+
+.picture {
+  width: 90%;
+  height: 67%;
+  margin: 5% 5% 3% 5%;
+  border-radius: 2px;
+  border: lightgray 1px solid;
+
+  img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px;
+
+    border-radius: 2px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .frame h2 {
+    font-size: 24px;
+  }
+
+  .frame h3 {
+    font-size: 24px;
+  }
+  .frame h4 {
+    font-size: 17px;
+    transform: translateX(406px) translateY(-350px) rotate(90deg);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .frame h2 {
+    font-size: 2.4vw;
+    padding: 1vw 0 0 0;
+  }
+
+  .frame h3 {
+    font-size: 2.3vw;
+  }
+  .frame h4 {
+    font-size: 1.8vw;
+    transform: translateX(40.7vw) translateY(-35vw) rotate(90deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .frame h2 {
+    font-size: 4.9vw;
+    padding: 3vw 0 0 0;
+  }
+
+  .frame h3 {
+    font-size: 4.2vw;
+  }
+  .frame h4 {
+    font-size: 3.6vw;
+    transform: translateX(81vw) translateY(-70vw) rotate(90deg);
+  }
+}

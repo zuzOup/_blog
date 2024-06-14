@@ -1,0 +1,83 @@
+.banner {
+  width: 100%;
+  max-width: 2000px;
+  height: 30vw;
+  max-height: 600px;
+
+  margin: 0 auto;
+  background-image: url("/banner.png");
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.insta_link {
+  position: absolute;
+  cursor: pointer;
+
+  width: 5.8vw;
+  height: 5vw;
+
+  top: 2.1vw;
+  left: 2.1vw;
+
+  transition: all 0.1s ease-in;
+}
+
+.insta_link:hover {
+  transform: scale(1.15);
+}
+
+.insta_bck {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/insta.png");
+}
+
+svg {
+  opacity: 0;
+  transform: translateX(1.5vw) translateY(-0.8vw) scale(0.1);
+  transition: all 0.5s ease;
+}
+
+svg.active {
+  opacity: 1;
+  transform: translateX(1.5vw) translateY(-0.8vw) scale(1);
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    background-image: url("/bannerMobile.png");
+  }
+
+  .insta_link {
+    top: 16.1vw;
+  }
+}
+
+@media (hover: none) {
+  svg {
+    opacity: 1;
+    transform: translateX(1.5vw) translateY(-0.8vw) scale(1);
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .insta_link {
+    height: 100px;
+    width: 116px;
+
+    top: 35.2px;
+    left: calc(50vw - 950px);
+  }
+
+  svg.active {
+    opacity: 1;
+    transform: translateX(30px) translateY(-16px) scale(1);
+  }
+}

@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --fontText: "Urbanist", sans-serif;
+  --fontHeader: "Clicker Script", cursive;
+
+  --red: #ee2147;
+
+  font-family: var(--fontText), sans-serif;
+}
+
+*,
+html {
+  scroll-behavior: smooth !important;
+}
+
+html::-webkit-scrollbar-track {
+  border-radius: 20px;
+  background-color: #f6ede6;
+  box-shadow: 0 0 4px inset #dcc8b7;
+}
+
+html::-webkit-scrollbar {
+  width: 6px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #e4bcb1;
+  box-shadow: 0 0 2px inset #b28b8b;
+  border-radius: 10px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden;
+
+  background-image: url("/bck.png");
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+header {
+  width: calc(100vw - 6px);
+  height: fit-content;
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    width: 100vw;
+    height: fit-content;
+  }
+}
+
+main {
+  min-height: calc(100vh - 36.625vw);
+}
+
+main.mainSmall {
+  min-height: calc(100vh - 22.125vw);
+}
+
+@media screen and (min-width: 2000px) {
+  main {
+    min-height: calc(100vh - 443px) !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    min-height: calc(100vh - 62.125vw);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    min-height: calc(100vh - 56.625vw);
+  }
+}
+
+.lace {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: 2000px;
+  height: 1.75vw;
+  max-height: 35px;
+
+  background-image: url("/lace.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: repeat-x;
+}
+
+@media screen and (max-width: 800px) {
+  .lace {
+    height: 5.5vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .lace {
+    height: 7.75vw;
+  }
+}
+
+/*background center-contain-noRepeat*/
+
+.banner,
+.insta_bck,
+.title_text_paper,
+.archive-link-bck,
+.bannerSmall,
+.notfound-link,
+.notfound-window,
+.notfound-goose {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
