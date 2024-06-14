@@ -25,3 +25,7 @@ dist-ssr
 *.sln
 *.sw?
 _extra
+
+.firebase
+.eslintrc
+.firebaserc
