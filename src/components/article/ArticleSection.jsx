@@ -6,7 +6,7 @@ import ArticleTypeSwitch from "./ArticleTypeSwitch";
 function ArticleSection({ articleData, order }) {
   useEffect(() => {
     window.scrollTo(0, 0);
-    console.log(1);
+    // console.log(1);
   }, []);
 
   return (

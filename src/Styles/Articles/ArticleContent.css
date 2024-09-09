@@ -7,7 +7,8 @@ article {
   left: calc((100vw - 1000px) / 4);
   position: absolute;
   top: 18.5vw;
-  background-image: url("/day.png");
+  background-image: url("https://res.cloudinary.com/dlvjx6msb/image/upload/v1725908167/day_lsajbd.png"),
+    url("/day.png");
 
   background-position: center;
   background-repeat: no-repeat;
@@ -34,8 +35,8 @@ article {
 
   width: 150px;
   height: 206px;
-  background-image: url("/weather/0.png");
-
+  background-image: url("https://res.cloudinary.com/dlvjx6msb/image/upload/v1725908363/0_lzpanv.png"),
+    url("/weather/0.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -43,12 +44,20 @@ article {
   transform: rotate(3deg);
 }
 
-.weather span {
+.weather_bck {
+  width: 150px;
+  height: 206px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.weather_bck > div {
   display: flex;
   width: 100%;
 
   height: 66px;
-  margin: 120px 0 0 0;
+  padding: 120px 0 0 0;
 }
 
 .weatherMean {
@@ -194,13 +203,18 @@ article .grid-article {
   padding: 0;
   max-height: 449px;
   background-color: rgba(128, 128, 128, 0.725);
-  background-image: url("/loader.gif");
+  /* background-image: url("/loader.gif"); */
   background-position: center;
   background-repeat: no-repeat;
 }
 
 iframe {
   border-radius: 2px;
+}
+
+.insta {
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (min-width: 2000px) {

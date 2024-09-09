@@ -6,6 +6,7 @@ import Article_Img from "./ArticleTypes/Article_Img";
 import Article_Grid from "./ArticleTypes/Article_Grid";
 import Article_Yt from "./ArticleTypes/Article_Yt";
 import Article_Link from "./ArticleTypes/Article_Link";
+import Article_Insta from "./ArticleTypes/Article_Insta";
 
 function ArticleTypeSwitch({ type, data }) {
   {
@@ -22,6 +23,8 @@ function ArticleTypeSwitch({ type, data }) {
         return <Article_Yt data={data} />;
       case "link":
         return <Article_Link data={data} />;
+      case "insta":
+        return <Article_Insta data={data} />;
       default:
         return null; // or throw an error for invalid componentName
     }

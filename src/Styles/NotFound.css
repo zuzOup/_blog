@@ -14,7 +14,8 @@
   width: 80%;
   height: 80%;
 
-  background-image: url("/notfound.png");
+  background-image: url("https://res.cloudinary.com/dlvjx6msb/image/upload/v1725908175/notfound_yqdqu9.png"),
+    url("/notfound.png"); /**/
 
   flex-direction: column;
 }

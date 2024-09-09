@@ -5,7 +5,8 @@
   max-height: 600px;
 
   margin: 0 auto;
-  background-image: url("/banner.png");
+  background-image: url("https://res.cloudinary.com/dlvjx6msb/image/upload/w_2000/v1725906759/banner_kiipfo.png"),
+    url("/banner.png");
 
   display: flex;
   flex-direction: column;
@@ -52,7 +53,8 @@ svg.active {
 
 @media screen and (max-width: 600px) {
   .banner {
-    background-image: url("/bannerMobile.png");
+    background-image: url("https://res.cloudinary.com/dlvjx6msb/image/upload/v1725906757/bannerMobile_uhb0fr.png"),
+      url("/bannerMobile.png");
   }
 
   .insta_link {

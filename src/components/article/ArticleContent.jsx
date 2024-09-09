@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-
+import { Helmet } from "react-helmet";
 import parse from "html-react-parser";
 
 import Weather from "./Weather";
@@ -9,11 +9,10 @@ import { day, date, titleVol } from "../articlehelpers";
 
 import "../../Styles/Articles/ArticleContent.css";
 
-
 function ArticleContent({ allData, articleId }) {
-  
   const header = allData[articleId].header;
 
+  console.log(header);
   const order = allData[articleId].article_order;
   const articleData = allData[articleId].articles;
 
@@ -21,6 +20,9 @@ function ArticleContent({ allData, articleId }) {
 
   return (
     <article>
+      <Helmet>
+        <title>{`Na rok Toronťákama - ${day(header.date)} | ${header.title}`}</title>
+      </Helmet>
       <div className="day">
         <p>{day(header.date)}</p>
       </div>

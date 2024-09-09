@@ -6,7 +6,8 @@
   display: flex;
   flex-direction: column;
 
-  background-image: url("/bannerSC.png");
+  background-image: url("https://res.cloudinary.com/dlvjx6msb/image/upload/w_2000/v1725906758/bannerSC_rlou3t.png"),
+    url("/bannerSC.png"); /**/
 }
 
 .bannerSmall a {
@@ -42,7 +43,8 @@
 @media screen and (max-width: 800px) {
   .bannerSmall {
     height: 30vw;
-    background-image: url("/bannerSCMobile.png");
+    background-image: url("https://res.cloudinary.com/dlvjx6msb/image/upload/v1725906758/bannerSCMobile_pf8vuz.png"),
+      url("/bannerSCMobile.png");
   }
   .bannerSmall a {
     transform: translateX(0.5vw);

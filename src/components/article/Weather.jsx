@@ -3,6 +3,16 @@ import { useState, useEffect } from "react";
 
 import { forecast } from "../articlehelpers";
 
+const weatherCards = [
+  "https://res.cloudinary.com/dlvjx6msb/image/upload/v1725908363/0_lzpanv.png",
+  "https://res.cloudinary.com/dlvjx6msb/image/upload/v1725908364/1_v680fw.png",
+  "https://res.cloudinary.com/dlvjx6msb/image/upload/v1725908366/2_bqrqdl.png",
+  "https://res.cloudinary.com/dlvjx6msb/image/upload/v1725908367/3_ztyepm.png",
+  "https://res.cloudinary.com/dlvjx6msb/image/upload/v1725908368/4_ahv01e.png",
+  "https://res.cloudinary.com/dlvjx6msb/image/upload/v1725908369/5_wbix9e.png",
+  "https://res.cloudinary.com/dlvjx6msb/image/upload/v1725908362/6_mtmsk9.png",
+];
+
 function useVeryGutWeather({ weatherData, date }) {
   const [temp, setTemp] = useState({ min: "", max: "", feel: "", mean: "" });
   const [isForecast, setisForecast] = useState(0);
@@ -38,18 +48,22 @@ function Weather({ weatherData, date }) {
   const [temp, isForecast] = useVeryGutWeather({ weatherData, date });
 
   return (
-    <div
-      className="weather"
-      style={{ backgroundImage: `url("/weather/${isForecast}.png")` }}
-    >
-      <span>
-        <div className="weatherMean">{temp.mean}°</div>
-        <div className="weatherDiv">
-          <div>Pocit: {temp.feel}°</div>
-          <div>Min: {temp.min}°</div>
-          <div>Max: {temp.max}°</div>
+    <div className="weather">
+      <div
+        className="weather_bck"
+        style={{
+          backgroundImage: `url(${weatherCards[isForecast]}),url("/weather/${isForecast}.png")`,
+        }}
+      >
+        <div>
+          <div className="weatherMean">{temp.mean}°</div>
+          <div className="weatherDiv">
+            <div>Pocit: {temp.feel}°</div>
+            <div>Min: {temp.min}°</div>
+            <div>Max: {temp.max}°</div>
+          </div>
         </div>
-      </span>
+      </div>
     </div>
   );
 }

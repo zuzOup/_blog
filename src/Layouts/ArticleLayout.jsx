@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { useParams } from "react-router-dom";
 
+
 import HeaderSmall from "../components/HeaderSmall";
 import Footer from "../components/Footer";
 import ArticleContent from "../components/article/ArticleContent";
@@ -15,6 +16,7 @@ function ArticleLayout({ loaded, articleDates, allData }) {
   } else {
     return (
       <>
+        
         <HeaderSmall backToMain={false} />
         <main className="mainSmall">
           {loaded && <ArticleContent allData={allData} articleId={articleId} />}

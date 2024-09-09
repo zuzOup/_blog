@@ -3,7 +3,8 @@
   height: 20vw;
   width: 30vw;
 
-  background-image: url("/archivelink.png");
+  background-image: url("https://res.cloudinary.com/dlvjx6msb/image/upload/v1725908167/archivelink_pkmiqo.png"),
+    url("/archivelink.png");
 
   display: flex;
   justify-content: center;
